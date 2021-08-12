@@ -1,0 +1,1 @@
+A HTML, CSS and Javascript project about a ficticious crypto currency.
