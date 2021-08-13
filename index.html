@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Space Coin</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" id="logo">Logo</a>
+        <nav id="nav">
+            <!-- Aplicações para a Internet Ricas em Acessibilidade - Accessible Rich Internet Applications (ARIA) tornam o conteúdo e as aplicações web mais acessíveis às pessoas com deficiência. As marcações abaixo facilitam leitores de tela informando se o menu mobile encontra-se aberto ou fechado e o que ele controla (ul com id 'menu'). -->
+            <!-- <button id="btn-mobile">Menu
+                <span id="hamburger"></span>
+            </button> -->
+            <!-- Para efeitos de comparação no narrador, o botão acima foi comentado e está sem marcações de acessibilidade. -->
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="#">Calculadora</a></li>
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="#">Currency</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
