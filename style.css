@@ -6,8 +6,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #1F2229;
+}
+
 a {
     text-decoration: none;
+    color: #e7e7e7;
 }
 
 a:hover {
@@ -21,7 +26,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background: #e7e7e7;
+    background-image: url(images/starfield-banner.jpg);
 }
 
 #logo {
@@ -52,6 +57,7 @@ a:hover {
         top: 70px;
         right: 0;
         background: #e7e7e7;
+        /* bgc ul mobile*/
         transition: .6s;
         z-index: 10;
         height: 0;
@@ -62,6 +68,7 @@ a:hover {
         height: calc(100vh - 70px);
         visibility: visible;
         /* overflow-y: auto;  barra de rolagem vertical caso haja mais itens no menu*/
+        background: #1F2229;
     }
     #menu a {
         padding: 1rem 0;
@@ -71,7 +78,6 @@ a:hover {
     #btn-mobile {
         display: flex;
         padding: .5rem 1rem;
-        font-size: 1rem;
         border: none;
         background: none;
         cursor: pointer;
@@ -81,6 +87,7 @@ a:hover {
         display: block;
         border-top: 2px solid;
         width: 20px;
+        color: #e7e7e7;
     }
     #hamburger::after,
     #hamburger::before {
