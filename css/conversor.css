@@ -1,0 +1,121 @@
+/* Configuração das boxes e textos */
+
+#tituloPrincipal {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-weight: 900;
+    margin: 15px 15px 40px 15px;
+    padding-top: 7vh;
+}
+
+#corpo {
+    background-color: #E5E5E5;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 65vw;
+    justify-content: space-around;
+    margin: 0 auto;
+    min-height: 50vh;
+}
+
+#principal {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 13vh;
+    min-width: 55vw;
+    padding: 20px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px 3px rgb(156, 154, 154, 0.4)
+}
+
+#box3 {
+    margin-top: 20px;
+    text-align: justify;
+    padding: 20px 50px 20px 30px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px 3px rgb(156, 154, 154, 0.4);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#dataconv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#titresult {
+    color: rgb(25, 92, 92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultado {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.boxConvert {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 18vh;
+    align-items: center;
+}
+
+#opcoes1,
+#opcoes2 {
+    height: 40px;
+    width: 100%;
+}
+
+.moedaInput {
+    height: 35px;
+    width: 97%;
+}
+
+
+/* Configuração da barra preta com a frase de efeito */
+
+#meio {
+    background-color: black;
+    color: #FFFFFF;
+    font-size: 3vh;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    height: 11vh;
+    padding: 2px 0;
+    margin-top: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(2, 2, 2, 0.774);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Configuração da área do Botão */
+
+#divBotoes {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    max-width: 60vw;
+}
+
+#botaoconvert {
+    background-color: rgb(25, 92, 92);
+    color: #FFFFFF;
+    font-size: 19px;
+    line-height: 16px;
+    padding: 9px;
+    border-radius: 6px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    box-shadow: rgb(0, 0, 0, 0.4) 5px 5px 15px 5px;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
+    cursor: pointer;
+}

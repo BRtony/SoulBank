@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 :root {
     --primary-color: black;
-    --secondary-color: #FAFAFA;
+    --secondary-color: white;
     --opaque-black: #262626;
     --GREEN: #44B3C3
 }
@@ -11,13 +11,8 @@
 }
 
 body {
-    width: 100vw;
+    /* width: 100vw; */
     overflow-x: hidden;
-}
-
-.fas,
-.fa-moon {
-    font-size: 2rem;
 }
 
 .darkmode {
@@ -45,32 +40,51 @@ body {
     color: var(--secondary-color);
     font-size: large;
     font-weight: 400;
-    height: 7vh;
-    width: 20vw;
     border: none;
+    border-radius: 5px;
+    height: 6vh;
 }
 
-.access-buttons {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#modo-noturno {
-    width: fit-content;
-    margin-right: 1.5rem;
-    background: var(--opaque-black);
-    border-radius: 50%;
+.botaopreto:hover {
+    box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.158), -4px -4px 5px 0px rgba(255, 255, 255, 0.164), 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
     cursor: pointer;
 }
 
-#logo {
+.simular {
+    width: 16vw;
+    color: var(--secondary-color);
+    text-decoration: none;
+    height: 8vh;
+}
+
+.access {
+    width: 6vw;
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+#modo-noturno {
+    width: 13vw;
+    margin-right: 1.5rem;
+    background: var(--opaque-black);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logo {
     font-family: 'Roboto', sans-serif;
+    width: 15vw;
+    content: url(../images/logo2.png);
+}
+
+.logodark {
+    font-family: 'Roboto', sans-serif;
+    width: 15vw;
+    content: url(../images/logo4.png);
 }
 
 #logo-container {
-    height: 120px;
-    width: 120px;
-    background-color: #c4c4c4;
     text-align: center;
     display: flex;
     align-items: center;
@@ -79,10 +93,6 @@ body {
 #nav {
     display: flex;
     align-items: center;
-}
-
-#login {
-    width: 17vw;
 }
 
 #stronger {
@@ -101,21 +111,20 @@ body {
     margin: 0 1.5rem;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
 }
 
 #header {
-    height: 70px;
-    margin-top: 2.5rem;
-    margin-left: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem;
+    margin-top: 1rem;
 }
 
 .header-container {
     width: 100vw;
-    height: calc(90vh - 2.5rem);
+    height: 90vh;
 }
 
 .main-h1,
@@ -130,6 +139,7 @@ body {
 
 .main-h2 {
     font-size: 1.4rem;
+    font-weight: 500;
 }
 
 .h-container {
@@ -140,11 +150,11 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 15vh;
-    margin-left: 3vw;
+    margin-left: 4vw;
 }
 
 #blackline {
-    height: 22px;
+    height: 10px;
     width: 100vw;
     position: absolute;
     bottom: 0;
@@ -167,7 +177,29 @@ body {
 .hero {
     width: 100vw;
     height: 90vh;
-    background: url(images/hero-image.jpg) center no-repeat;
+    background: url(../images/hero-image.jpg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: .6s;
+}
+
+.cadastro-img {
+    background: url(../images/busy-world-trade-centre-station.jpg) center no-repeat;
+    width: 100vw;
+    height: 120vh;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: .6s;
+}
+
+.conversor-img {
+    background: url(../images/busy-world-trade-centre-station.jpg) center no-repeat;
+    width: 100vw;
+    height: 160vh;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -178,7 +210,7 @@ body {
 .herodark {
     width: 100vw;
     height: 90vh;
-    background: url(images/hero-image-dark.jpg) center no-repeat;
+    background: url(../images/hero-image-dark.jpg) center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -217,19 +249,6 @@ body {
 
 /* Alteração de textos e títulos do Main */
 
-
-/* main h1 {
-    margin-top: 30px;
-    margin-left: 4%;
-    text-align: justify;
-    font-size: 40px;
-}
-main h2{
-    font-size: 30px;  
-    display: inline;
-    text-align: justify;
-} */
-
 .titulos {
     font-size: 25px;
     color: var(--opaque-black);
@@ -237,16 +256,6 @@ main h2{
     font-weight: bold;
     text-align: justify;
 }
-
-
-/* main h4{
-    position: absolute;
-    bottom: 4%;
-    padding-left: 10px;
-    font-size: 18px;  
-    display: inline;
-    text-align: justify;
-} */
 
 .texto {
     text-align: justify;
@@ -288,7 +297,7 @@ main h2{
     color: #ffffff;
     font-family: "Roboto";
     border-style: none;
-    border-radius: 2rem;
+    border-radius: 5px;
     font-size: medium;
     text-align: center;
     text-transform: uppercase;
@@ -301,6 +310,7 @@ main h2{
     border-style: none;
     background-color: #218291;
     box-shadow: 0px 0px 3px black;
+    cursor: pointer;
 }
 
 
@@ -319,10 +329,6 @@ main h2{
     grid-area: beneficios-main;
 }
 
-.fundadores-main {
-    grid-area: fundadores-main;
-}
-
 
 /* fim main section */
 
@@ -335,14 +341,22 @@ main h2{
     justify-content: center;
     align-items: center;
     margin-bottom: 5vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fundadores-h3,
+.fundadores-h4 {
+    font-family: 'Roboto', sans-serif;
 }
 
 .fundadores-h3 {
     margin-top: 4rem;
+    font-size: 2.5rem;
 }
 
 .fundadores-h4 {
     margin: 1rem 0;
+    font-size: 1.8rem;
 }
 
 .in-img {

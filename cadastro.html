@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro Cliente</title>
+</head>
+
+<body style="background: transparent;">
+    <header id="header" style="justify-content: center ">
+
+        <nav id="nav">
+            <div id="logo-container">
+
+                <a href="index.html" class="a-link"><img id="logo" class="logo" alt="logo"></a>
+            </div>
+            <button id="btn-mobile">
+                <span id="hamburger"></span>
+                </button>
+            <ul id="menu" role="menu">
+                <li><a class="modoclaro a-link" href="#fundadores">Fundadores</a></li>
+                <li><a class="modoclaro a-link " href="conversor.html">Currency</a></li>
+                <li><a class="modoclaro a-link " href="#">Calculadora</a></li>
+                <li><a class="modoclaro a-link " href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="principal">
+        <section id="form">
+            <form action="" id="formulario" name="formulario" method="POST">
+                <div>
+                    <input type="text" id="nome" placeholder="Nome">
+                </div>
+
+                <div>
+                    <input type="text" id="cpf" placeholder="CPF">
+                </div>
+                <div>
+                    <input type="text" name="dia" id="dia" placeholder="Dia Nascimento">
+                </div>
+                <div>
+                    <select id="mes" name="mes" placeholder="Mês">
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" name="ano" id="ano" placeholder="Ano">
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <select id="sexo" name="sexo" placeholder="Sexo">
+                    <option value="Não informado">Não Informado</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                </select>
+                <div id="divBotoes">
+                    <input type="button" id="btn_enviar" onclick="validar()" value="Enviar">
+                </div>
+                <div id="resultado">
+                    <p id="nome_frase"></p>
+                </div>
+            </form>
+        </section>
+        <section id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.302367056458!2d-46.68851868502161!3d-23.59348658466693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57464012d86b%3A0x63f27345c345c07!2sR.%20Helena%2C%20235%20-%20Vila%20Ol%C3%ADmpia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004552-050!5e0!3m2!1spt-BR!2sbr!4v1628952739687!5m2!1spt-BR!2sbr"
+                width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <!-- <div id="mapa"></div> -->
+        </section>
+    </section>
+    <div id="hero" class="cadastro-img"></div>
+    <!----------------------INÍCIO FOOTER------------------------------->
+    <footer class="footer-container">
+        <section class="social-footer">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img class="imagem-social-footer" src="./images/instagram_projeto.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <img class="imagem-social-footer" src="./images/twitter_projeto.png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <img class="imagem-social-footer" src="./images/whatsapp_projeto.png" alt="Whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <img class="imagem-social-footer" src="./images/facebook-icon.png" alt="Whatsapp">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <div class="copy-footer">
+            <p id="copyright-message">Copyright &copy; 2021 | SoulBank LTDA</p>
+        </div>
+
+    </footer>
+    <!----------------------Fim FOOTER------------------------------->
+    <script src="script/cadastro.js"></script>
+
+    </script>
+</body>
+
+</html>

@@ -18,21 +18,32 @@ btnMobile.addEventListener('touchstart', () => { toggleMenu }); //ao toque na te
 
 //botão dark mode
 function invertmode() {
-    const body = document.getElementsByTagName('body')
-    const currentClass = body[0].className;
-    body[0].className = currentClass == 'lightmode' ? 'darkmode' : 'lightmode';
 
-    // const body = document.getElementById('touchmybody')
-    // const bodyClass = body.className;
-    // body.className = bodyClass == 'modoclaro' ? 'modoescuro' : 'modoclaro';
+    const body = document.getElementById('body')
+    let currentClass = body.className;
+    body.className = currentClass == 'lightmode' ? 'darkmode' : 'lightmode';
 
+
+    var links = document.getElementsByClassName('modoclaro')
+    for (let i = 0; i < links.length; i++) {
+        if (links[i].style.color == 'white') {
+            links[i].style.color = "black";
+            links[i].style.transition = '0.6s';
+        } else {
+            links[i].style.color = "white"
+            links[i].style.transition = "0.6s"
+        }
+    }
     const blackline = document.getElementById('blackline')
-    const blacklineClass = blackline.className;
+    let blacklineClass = blackline.className;
     blackline.className = blacklineClass == 'blackline' ? 'blacklinelight' : 'blackline';
 
     const hero = document.getElementById('hero');
-    const heroClass = hero.className;
+    let heroClass = hero.className;
     hero.className = heroClass == 'hero' ? 'herodark' : 'hero';
+    const logo = document.getElementById('logo');
+    let logoClass = logo.className;
+    logo.className = logoClass == 'logo' ? 'logodark' : 'logo';
 }
 
 //SUPER MASTER SLIDES
@@ -64,7 +75,6 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = 'block';
     dots[slideIndex - 1].className += ' active';
 }
-//aumenta texto
 var textoAumentado = 0;
 
 function aumentarFonte() {
