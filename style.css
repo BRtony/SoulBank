@@ -1,62 +1,535 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+:root {
+    --primary-color: black;
+    --secondary-color: #FAFAFA;
+    --opaque-black: #262626;
+    --GREEN: #44B3C3
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #1F2229;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-a {
+.fas,
+.fa-moon {
+    font-size: 2rem;
+}
+
+.darkmode {
+    background-color: var(--opaque-black);
+    color: var(--secondary-color);
+    transition: .6s;
+}
+
+.modoclaro {
+    color: var(--opaque-black);
+}
+
+.modoescuro {
+    color: var(--secondary-color)
+}
+
+.lightmode {
+    background-color: var(--secondary-color);
+    color: var(--opaque-black);
+    transition: .6s;
+}
+
+.botaopreto {
+    background-color: var(--opaque-black);
+    color: var(--secondary-color);
+    font-size: large;
+    font-weight: 400;
+    height: 7vh;
+    width: 20vw;
+    border: none;
+}
+
+.access-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#modo-noturno {
+    width: fit-content;
+    margin-right: 1.5rem;
+    background: var(--opaque-black);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#logo {
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo-container {
+    height: 120px;
+    width: 120px;
+    background-color: #c4c4c4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+#login {
+    width: 17vw;
+}
+
+#stronger {
+    font-weight: 900;
+}
+
+.index-main {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.a-link {
     text-decoration: none;
-    color: #e7e7e7;
-}
-
-a:hover {
-    background: rgba(0, 0, 0, 0.05);
+    display: block;
+    margin: 0 1.5rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
 }
 
 #header {
     height: 70px;
-    /*media query considera esta altura*/
+    margin-top: 2.5rem;
+    margin-left: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background-image: url(images/starfield-banner.jpg);
 }
 
-#logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+.header-container {
+    width: 100vw;
+    height: calc(90vh - 2.5rem);
+}
+
+.main-h1,
+.main-h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.main-h1 {
+    font-size: 2rem;
+}
+
+.main-h2 {
+    font-size: 1.4rem;
+}
+
+.h-container {
+    width: 45vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15vh;
+    margin-left: 3vw;
+}
+
+#blackline {
+    height: 22px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.blackline {
+    background-color: var(--opaque-black);
+    transition: 0.6s;
+}
+
+.blacklinelight {
+    background-color: #cfa90e;
+    height: 22px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    transition: 0.6s;
+}
+
+.hero {
+    width: 100vw;
+    height: 90vh;
+    background: url(images/hero-image.jpg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: .6s;
+}
+
+.herodark {
+    width: 100vw;
+    height: 90vh;
+    background: url(images/hero-image-dark.jpg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: .6s;
 }
 
 #menu {
     display: flex;
+    justify-content: space-between;
     list-style: none;
     gap: .5rem;
-}
-
-#menu a {
-    display: block;
-    padding: .5rem;
 }
 
 #btn-mobile {
     display: none;
 }
 
+
+/* main section */
+
+
+/* Grid do main */
+
+.grid-main {
+    color: rgb(0, 0, 0);
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-areas: "beneficios-main"
+    /* "fundadores-main" */
+    ;
+    padding: 0.2%;
+}
+
+
+/* Alteração de textos e títulos do Main */
+
+
+/* main h1 {
+    margin-top: 30px;
+    margin-left: 4%;
+    text-align: justify;
+    font-size: 40px;
+}
+main h2{
+    font-size: 30px;  
+    display: inline;
+    text-align: justify;
+} */
+
+.titulos {
+    font-size: 25px;
+    color: var(--opaque-black);
+    display: inline;
+    font-weight: bold;
+    text-align: justify;
+}
+
+
+/* main h4{
+    position: absolute;
+    bottom: 4%;
+    padding-left: 10px;
+    font-size: 18px;  
+    display: inline;
+    text-align: justify;
+} */
+
+.texto {
+    text-align: justify;
+}
+
+
+/* lista das redes sociais footer*/
+
+.beneficios-main ul {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Noto Sans JP";
+}
+
+.beneficios-main ul li {
+    width: 23%;
+    padding: 2%;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.beneficios-main img {
+    display: block;
+    width: 15%;
+}
+
+.beneficios-main ul li p {
+    margin-top: 1rem;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+}
+
+
+/* Criação do botão aumentar fonte */
+
+#botaoAumentar {
+    background-color: var(--GREEN);
+    color: #ffffff;
+    font-family: "Roboto";
+    border-style: none;
+    border-radius: 2rem;
+    font-size: medium;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 7vh;
+    width: 20vw;
+}
+
+#botaoAumentar:hover {
+    border-style: none;
+    background-color: #218291;
+    box-shadow: 0px 0px 3px black;
+}
+
+
+/* Alinhamento do botão aumentar */
+
+#botao {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Definição das classes e suas grid-area (FOOTER)*/
+
+.beneficios-main {
+    grid-area: beneficios-main;
+}
+
+.fundadores-main {
+    grid-area: fundadores-main;
+}
+
+
+/* fim main section */
+
+.fundadores {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.fundadores-h3 {
+    margin-top: 4rem;
+}
+
+.fundadores-h4 {
+    margin: 1rem 0;
+}
+
+.in-img {
+    border-radius: 10px;
+}
+
+
+/* SUPER MASTER SLIDE */
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 70vw;
+    position: relative;
+    margin: 2rem auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* FIM DO SUPER MASTER SLIDE */
+
+
+/* Footer*/
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+}
+
+.footer-container {
+    background-color: #0d0d0d;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*Tamanho das imagens do rodapé*/
+
+.imagem-social-footer {
+    width: 2em;
+    height: 2em;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+
+/* lista das redes sociais footer*/
+
+.social-footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Definição das classes (FOOTER)*/
+
+.social-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 23vw;
+}
+
+
+/*Estilização da seção copy-footer*/
+
+.copy-footer {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Fim da estilização do Footer */
+
 @media (max-width: 600px) {
     #menu {
         display: block;
         position: absolute;
         width: 100%;
+        margin-top: 29px;
         top: 70px;
         right: 0;
-        background: #e7e7e7;
+        left: 25px;
+        background: #e7e7e77c;
         /* bgc ul mobile*/
         transition: .6s;
         z-index: 10;
@@ -68,7 +541,7 @@ a:hover {
         height: calc(100vh - 70px);
         visibility: visible;
         /* overflow-y: auto;  barra de rolagem vertical caso haja mais itens no menu*/
-        background: #1F2229;
+        background: transparent;
     }
     #menu a {
         padding: 1rem 0;
@@ -87,7 +560,7 @@ a:hover {
         display: block;
         border-top: 2px solid;
         width: 20px;
-        color: #e7e7e7;
+        color: var(--primary-color);
     }
     #hamburger::after,
     #hamburger::before {
