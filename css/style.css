@@ -35,26 +35,27 @@ body {
     transition: .6s;
 }
 
-.botaopreto {
-    background-color: var(--opaque-black);
-    color: var(--secondary-color);
+.botoes {
+    background-color: rgb(25, 92, 92);
+    color: #FFFFFF;
     font-size: 1rem;
-    font-weight: 400;
-    border: none;
-    border-radius: 5px;
-    height: 6vh;
-}
-
-.botaopreto:hover {
-    box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.158), -4px -4px 5px 0px rgba(255, 255, 255, 0.164), 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+    padding: 9px;
+    border-radius: 6px;
+    box-shadow: rgb(0, 0, 0, 0.4) 5px 5px 15px 5px;
+    border: 1px solid rgba(28, 110, 164, 0.562);
+    display: inline-block;
     cursor: pointer;
 }
 
+.botoes:hover {
+    background-color: rgb(20, 70, 70);
+}
+
 .simular {
-    width: 16vw;
+    width: 13vw;
     color: var(--secondary-color);
     text-decoration: none;
-    height: 8vh;
+    height: 6vh;
 }
 
 .access {
@@ -65,21 +66,16 @@ body {
 }
 
 #modo-noturno {
-    width: 13vw;
-    margin-right: 1.5rem;
-    background: var(--opaque-black);
-    border-radius: 5px;
-    cursor: pointer;
+    width: 10vw;
+    margin: 0 1.5rem;
 }
 
 .logo {
-    font-family: 'Roboto', sans-serif;
     width: 15vw;
     content: url(../images/logo2.png);
 }
 
 .logodark {
-    font-family: 'Roboto', sans-serif;
     width: 15vw;
     content: url(../images/logo4.png);
 }
@@ -104,7 +100,7 @@ body {
     margin: 0 1.5rem;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
 }
 
 #header {
@@ -281,31 +277,29 @@ body {
 /* Criação do botão aumentar fonte */
 
 #botaoAumentar {
-    background-color: var(--GREEN);
-    color: #ffffff;
-    font-family: "Roboto";
-    border-style: none;
-    border-radius: 5px;
-    font-size: medium;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    height: 7vh;
-    width: 20vw;
+    background-color: rgb(25, 92, 92);
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 16px;
+    padding: 9px;
+    border-radius: 6px;
+    font-weight: normal;
+    box-shadow: rgb(0, 0, 0, 0.4) 5px 5px 15px 5px;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
+    cursor: pointer;
 }
 
 #botaoAumentar:hover {
-    border-style: none;
-    background-color: #218291;
-    box-shadow: 0px 0px 3px black;
-    cursor: pointer;
+    background-color: rgb(20, 70, 70);
 }
 
 
 /* Alinhamento do botão aumentar */
 
 #botao {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: center;
 }
@@ -328,7 +322,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -423,7 +417,6 @@ body {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -459,10 +452,12 @@ body {
     padding: 7px;
     border-radius: 50%;
     font-size: 1.2rem;
+    transition: 0.6s;
 }
 
 #myBtn:hover {
     background-color: var(--GREEN);
+    transition: 0.6s;
 }
 
 @-webkit-keyframes fade {
@@ -492,7 +487,6 @@ body {
 footer {
     width: 100vw;
     height: 10vh;
-    display: flex;
 }
 
 .footer-container {

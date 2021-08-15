@@ -76,4 +76,9 @@ footer {
     box-shadow: rgb(0, 0, 0, 0.4) 5px 5px 15px 5px;
     border: 2px solid rgb(28, 110, 164);
     display: inline-block;
+    cursor: pointer;
+}
+
+#btn_enviar:hover {
+    background-color: rgb(20, 70, 70);
 }
