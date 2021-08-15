@@ -3,7 +3,7 @@ function invertmode() {
     const body = document.getElementById('body')
     let currentClass = body.className;
     body.className = currentClass == 'lightmode' ? 'darkmode' : 'lightmode';
-    var links = document.getElementsByClassName('modoclaro')
+    let links = document.getElementsByClassName('modoclaro')
     for (let i = 0; i < links.length; i++) {
         if (links[i].style.color == 'white') {
             links[i].style.color = "black";
@@ -25,7 +25,7 @@ function invertmode() {
 }
 
 //SUPER MASTER SLIDES
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // proximo/anterior
@@ -34,9 +34,9 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName('mySlides');
-    var dots = document.getElementsByClassName('dot');
+    let i;
+    let slides = document.getElementsByClassName('mySlides');
+    let dots = document.getElementsByClassName('dot');
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
@@ -50,7 +50,7 @@ function showSlides(n) {
 }
 
 //font size section
-var textoAumentado = 0;
+let textoAumentado = 0;
 
 function aumentarFonte() {
     if (textoAumentado == 0) {
