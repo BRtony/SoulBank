@@ -1,29 +1,8 @@
-const btnMobile = document.getElementById('btn-mobile');
-
-function toggleMenu() {
-    const nav = document.getElementById('nav');
-    nav.classList.toggle('active'); //classList.toggle adiciona ou remove uma classe ao elemento nav. Poderia ser substituído por .add ou .remove 
-    const active = nav.classList.contains('active');
-    this.setAttribute('aria-expanded', active);
-    if (active) {
-        this.setAttribute('aria-label', 'Fechar Menu'); //se a nav tem classe 'active'
-    } else {
-        this.setAttribute('aria-label', 'Abrir Menu');
-    }
-
-}
-
-btnMobile.addEventListener('click', toggleMenu); //ao clicar no botão, chama a função toggleMenu
-btnMobile.addEventListener('touchstart', () => { toggleMenu }); //ao toque na tela, chama a função toggleMenu
-
-//botão dark mode
+//dark mode
 function invertmode() {
-
     const body = document.getElementById('body')
     let currentClass = body.className;
     body.className = currentClass == 'lightmode' ? 'darkmode' : 'lightmode';
-
-
     var links = document.getElementsByClassName('modoclaro')
     for (let i = 0; i < links.length; i++) {
         if (links[i].style.color == 'white') {
@@ -37,7 +16,6 @@ function invertmode() {
     const blackline = document.getElementById('blackline')
     let blacklineClass = blackline.className;
     blackline.className = blacklineClass == 'blackline' ? 'blacklinelight' : 'blackline';
-
     const hero = document.getElementById('hero');
     let heroClass = hero.className;
     hero.className = heroClass == 'hero' ? 'herodark' : 'hero';
@@ -50,14 +28,9 @@ function invertmode() {
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// proximo/anterior
 function plusSlides(n) {
     showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
@@ -75,6 +48,8 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = 'block';
     dots[slideIndex - 1].className += ' active';
 }
+
+//font size section
 var textoAumentado = 0;
 
 function aumentarFonte() {
@@ -91,4 +66,29 @@ function aumentarFonte() {
             textoAumentado--;
         }
     }
+}
+
+
+
+const mybutton = document.getElementById("myBtn");
+window.onscroll = function() { scrollFunction() };
+
+// controle pelas bolinhas
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+// Quando o usuario rola 100px do topo, mostra ou esconde o botão
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+//scroll to top quando usuario clica
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
