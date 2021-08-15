@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a7d1e099f6.js" crossorigin="anonymous"></script>
 
     <title>Soul Bank</title>
 </head>
@@ -28,6 +29,7 @@
                 <button id="modo-noturno" class="botoes" onclick="invertmode()">Modo Noturno</button>
                 <button id="login" class="botoes access"><a class="access" href="#">Login</a></button>
             </nav>
+
         </header>
         <section class="h-container">
             <h1 class="main-h1">Acesso rápido a <strong id="stronger">investimentos</strong> e <strong id="stronger">cotações</strong>, a qualquer hora e em qualquer lugar</h1>
@@ -40,33 +42,31 @@
     </div>
     <!----------------------Inicio do  Main------------------------------->
     <main class="grid-main">
-        <section id=botao>
-            <input id="botaoAumentar" type="button" onclick="aumentarFonte()" value="Alterar tamanho da fonte">
-        </section>
+        <div class="plus-minus-icons-box">
+            <a onclick="smallerLetter()" class="fa-plus">a <i class="fas fa-minus"></i></a>
+            <a onclick="largerLetter()" class="fa-plus">A <i class="fas fa-plus"></i></a>
+        </div>
         <section class="beneficios-main">
-            <ul>
-                <li>
-                    <img src="images/simbolo.png" alt="">
-                    <h3 class="titulos">Programa de pontos sem custo</h3>
-                    <p class="texto">Acumule pontos sem gastar com mensalidade ou custo de participação.</p>
-                </li>
-                <li>
-                    <img src="images/seta-cima.png" alt="Gráfico subindo">
-                    <h3 class="titulos">Sem taxas para investimentos</h3>
-                    <p class="texto">Invista em renda fixa e variável sem taxa de corretagem e custódia.</p>
-                </li>
-                <li>
-                    <img src="images/24Horas.png" alt="">
-                    <h3 class="titulos">Atendimento 24H</h3>
-                    <p class="texto">Conte com a gente 24h por dia, 7 dias por semana pelo chat do app.</p>
-                </li>
-
-            </ul>
+            <div class="beneficios-item">
+                <img src="images/simbolo.png" alt="">
+                <h3 class="titulos fontSizeControl">Programa de pontos sem custo</h3>
+                <p class="texto fontSizeControl">Acumule pontos sem gastar com mensalidade ou custo de participação.</p>
+            </div>
+            <div class="beneficios-item">
+                <img src="images/seta-cima.png" alt="Gráfico subindo">
+                <h3 class="titulos fontSizeControl">Sem taxas para investimentos</h3>
+                <p class="texto fontSizeControl">Invista em renda fixa e variável sem taxa de corretagem e custódia.</p>
+            </div>
+            <div class="beneficios-item">
+                <img src="images/24Horas.png" alt="">
+                <h3 class="titulos fontSizeControl">Atendimento 24H</h3>
+                <p class="texto fontSizeControl">Conte com a gente 24h por dia, 7 dias por semana pelo chat do app.</p>
+            </div>
         </section>
 
         <section id="fundadores" class="fundadores">
-            <h3 class="modoclaro fundadores-h3 ">Um time que pensa em tudo <strong>para você</strong>.</h3>
-            <h4 class="modoclaro fundadores-h4 ">Conheça nossos fundadores</h4>
+            <h3 class="modoclaro fundadores-h3">Um time que pensa em tudo <strong>para você</strong>.</h3>
+            <h4 class="modoclaro fundadores-h4">Conheça nossos fundadores</h4>
             <!-- Slideshow  -->
             <div class="slideshow-container">
 
