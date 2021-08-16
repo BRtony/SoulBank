@@ -85,7 +85,7 @@ body {
     align-items: center;
 }
 
-#stronger {
+.stronger {
     font-weight: 900;
 }
 
@@ -185,6 +185,17 @@ body {
     transition: .6s;
 }
 
+.calculadora-img {
+    background: url(../images/busy-world-trade-centre-station.jpg) center no-repeat;
+    width: 100vw;
+    height: 150vh;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: .6s;
+}
+
 .hero {
     width: 100vw;
     height: 90vh;
@@ -221,7 +232,7 @@ body {
 
 /* main section */
 
-.grid-main {
+.flex-main {
     color: rgb(0, 0, 0);
     display: grid;
     position: relative;
@@ -304,9 +315,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
-
-/* Definição das classes e suas grid-area (FOOTER)*/
 
 .beneficios-main {
     display: flex;

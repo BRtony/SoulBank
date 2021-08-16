@@ -1,0 +1,201 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#titlecalculator {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#buttonselectopition {
+    text-align: center;
+}
+
+
+/*Estilizando os botões das opções de calculadora*/
+
+.selectopition {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    border-width: 0;
+    font-size: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/*Estilo dos botões ao passar o mouse*/
+
+.selectopition:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+
+/*Estilo da calculadora*/
+
+#container {
+    width: 80%;
+    height: 70%;
+    margin: 2rem auto;
+}
+
+#calculator {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 black;
+    flex: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gainsboro;
+    padding-left: 25px;
+}
+
+
+/*Estilo do cursor de resultado*/
+
+#result {
+    width: 350px;
+    border-style: solid;
+    border-color: gray;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#operatorResult:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*Estilo do cursor de dados inseridos no cursor resultado*/
+
+#screen {
+    text-align: right;
+    height: 4rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    border-color: gray;
+    font-size: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 20px;
+    margin-top: 1rem;
+}
+
+
+/*Estilo do teclado numérico*/
+
+#keyboard {
+    height: 500px;
+    width: 350px;
+    background-color: gainsboro;
+    position: relative;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.operator,
+.number {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 10px;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#buttonScientific1:disabled,
+#buttonScientific2:disabled,
+#buttonScientific3:disabled,
+#buttonScientific4:disabled {
+    background-color: gainsboro;
+    color: gainsboro;
+}
+
+#buttonScientific1:enabled,
+#buttonScientific2:enabled,
+#buttonScientific3:enabled,
+#buttonScientific4:enabled {
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 10px;
+    border-width: 0;
+    font-size: 20px;
+}
+
+#operatorResult {
+    width: 90%;
+}
+
+.number {
+    background-color: gray;
+}
+
+.number,
+.operator,
+.selectopition {
+    cursor: pointer;
+}
+
+.operator:active,
+#buttonScientific1:active,
+#buttonScientific2:active,
+#buttonScientific3:active,
+#buttonScientific4:active {
+    font-size: 15px;
+}
+
+.operator:focus,
+.number:focus {
+    outline: 0;
+}
+
+button:nth-child(4) {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+button:nth-child(8) {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+button:nth-child(12) {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+button:nth-child(16) {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+button:nth-child(20) {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}

@@ -1,4 +1,4 @@
-//dark mode
+//Modo escuro
 function invertmode() {
     const body = document.getElementById('body')
     let currentClass = body.className;
@@ -54,23 +54,6 @@ function currentSlide(n) {
 }
 
 //font size section
-// let textoAumentado = 0;
-
-// function aumentarFonte() {
-//     if (textoAumentado == 0) {
-//         for (i = 0; i < 3; i++) {
-//             document.getElementsByClassName("texto")[i].style.fontSize = "28px";
-//             document.getElementsByClassName("titulos")[i].style.fontSize = "34px";
-//             textoAumentado++;
-//         }
-//     } else {
-//         for (i = 0; i < 3; i++) {
-//             document.getElementsByClassName("texto")[i].style.fontSize = "20px";
-//             document.getElementsByClassName("titulos")[i].style.fontSize = "25px";
-//             textoAumentado--;
-//         }
-//     }
-// }
 let letter_size = 25;
 
 function largerLetter() {
@@ -79,7 +62,6 @@ function largerLetter() {
     letter_size++
     body[0].style.fontSize = ` ${letter_size}px `
     for (i = 0; i < fontSizeControl.length; i++) fontSizeControl[i].style.fontSize = ` ${letter_size}px `
-
 }
 
 function smallerLetter() {
