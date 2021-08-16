@@ -5,3 +5,4 @@ This project was created at the SoulCode Academy bootcamp by a team of students:
 [@BrunoTravassos](https://github.com/BrunoTravassos)  
 [@guiCarvalhoSP](https://github.com/guiCarvalhoSP)  
 [@robertalmoura](https://github.com/robertalmoura)  
+[@andressasmr](https://github.com/andressasmr)
